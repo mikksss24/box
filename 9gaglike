@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Lato Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Master Title and Favicon -->
+    <title>Mike Kim</title>
+    <link rel="icon" href="http://icons.iconarchive.com/icons/crountch/one-piece-jolly-roger/256/Luffys-flag-2-icon.png">
+    <style>
+    .cok {
+    width: 181px;
+    height: 93px;
+    margin-top: -8px;
+    }
+    </style>
+  </head>
+  <body class="red darken-4">
+    <style>
+      input[type="search"] {height: 100% !important; padding-top: 21px;}
+      body
+      {
+        display: flex;
+        font-family: 'Lato', sans-serif;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      main {flex: 1 0 auto;}
+    </style>
+    <header>
+      <!-- Nav for small sized devices -->
+      <div class="navbar-fixed hide-on-med-and-up">
+        <nav class="red darken-4">
+          <div class="nav-wrapper container">
+            <div class="brand-logo left" style="overflow: hidden;">
+              <a href="/"><img src="https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/dukechain.svg" style="max-width: 60px; height: auto;" /></a>
+            </div>
+            <ul id="nav-mobile" class="right">
+                          <li><a href="#" data-activates="dropdown-menu-small" class="dropdown-button"><i class="material-icons">menu</i></a>
+                <ul id='dropdown-menu-small' class='dropdown-content' style="min-width: 129px;">
+                  <li><a href="/login" class="blue-text text-darken-1"><i class="material-icons left">input</i>Login dong</a></li>
+                  <li><a href="/register" class="blue-text text-darken-1"><i class="material-icons left">mode_edit</i>Daftar dong</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!" class="blue-text text-darken-1"><i class="material-icons left">search</i>Search</a></li>
+                  <li><a href="#!" class="blue-text text-darken-1"><i class="material-icons left">visibility</i>Browse</a></li>
+                </ul>
+              </li>
+                        </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Nav for medium sized devices -->
+      <div class="navbar-fixed hide-on-small-only hide-on-large-only col s12 m6">
+        <nav class="red darken-1">
+          <div class="nav-wrapper container">
+            <div class="brand-logo left" style="padding-top: 2px; overflow: hidden;">
+              <a href="/"><img src="https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/dukechain.svg" style="max-width: 60px; height: auto;" /></a>
+            </div>
+            <ul id="nav-mobile" class="right">
+                          <li><a href="#modal-login" style="font-size:120%;" class="modal-trigger"><i class="material-icons left">input</i>Login dong?</a></li>
+              <li><a href="#modal-register" style="font-size:130%;" class="modal-trigger"><i class="material-icons left">mode_edit</i>Daftar dong?</a></li>
+              <li><a href="#" data-activates="dropdown-menu-medium" class="dropdown-button"><i class="material-icons">menu</i></a>
+                <ul id='dropdown-menu-medium' class='dropdown-content' style="min-width: 129px;">
+                  <li><a href="#!" class="blue-text text-darken-1"><i class="material-icons left">search</i>Search</a></li>
+                  <li><a href="#!" class="blue-text text-darken-1"><i class="material-icons left">visibility</i>Browse</a></li>
+                </ul>
+              </li>
+                        </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Nav for large sized devices -->
+      <div class="navbar-fixed hide-on-med-and-down">
+        <nav class="red darken-1">
+          <div class="nav-wrapper">
+            <div class="container">
+              <div class="brand-logo left" style="overflow: hidden; padding-top: 3px;">
+                <a href="/"><img style="max-width: 55px; height: auto;" src="https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/13680395_10154445971785798_6503403773122695052_o.jpg?oh=6b64d706a3f13eec6648b6bd859ff180&oe=59678017"/></a>
+              </div>
+              <form class="left" style="padding-left:54px;">
+                <div class="input-field">
+                  <input id="search" type="search" class="red darken-1 white-text" required>
+                  <label for="search"><i class="material-icons">search</i></label>
+                </div>
+              </form>
+              <ul id="nav-mobile" class="right">
+                              <li><a href="#modal-login" style="font-size:130%;" class="modal-trigger"><i class="material-icons left">input</i>Login dong</a></li>
+                <li><a href="#modal-register" style="font-size:130%;" class="modal-trigger"><i class="material-icons left">mode_edit</i>Daftar kuy?</a></li>
+                <li><a href="#" data-activates="dropdown-menu-large" class="dropdown-button"><i class="material-icons">menu</i></a>
+                  <ul id='dropdown-menu-large' class='dropdown-content' style="min-width: 131px;">
+                    <li><a href="#!" class="blue-text text-darken-1"><i class="material-icons left">search</i>Search</a></li>
+                    <li><a href="#!" class="blue-text text-darken-1"><i class="material-icons left">visibility</i>Browse</a></li>
+                  </ul>
+                </li>
+                            </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+            <div id="modal-login" class="modal" style="max-width: 400px;">
+        <div class="modal-content">
+        <form method="POST" role="form" action="http://topiqu.com/login">
+        <input type="hidden" name="_token" value="JP5WFzpmD86odkS82SYrREG9j5RLzvF1lds3THOt">
+                <input id="username" type="text" class="validate" placeholder="Username" name="username" value="" required>
+                <input id="password" type="password" class="validate" placeholder="Password" name="password" required>
+            <p>
+              <center>
+                <input type="checkbox" id="rememberme" value="rememberme"/>
+                <label for="rememberme">Inget gue dong</label><br><br>
+              <a href="/forgot">Lupa password bray??</a><br>
+              <a href="/register">belom ada id keles?</a>
+            </center>
+          </p>
+          <br>
+          <center>
+              <button class="btn btn-lg btn-primary btn-block pink accent-3" type="submit">Masuk</button>
+            </center>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+          </div>
+        </div>
+      </div>
+      <div id="modal-register" class="modal" style="max-width: 400px;">
+        <div class="modal-content">
+          <form class="col s8 offset-s2" method="POST" role="form" action="http://topiqu.com/register">
+          <input type="hidden" name="_token" value="JP5WFzpmD86odkS82SYrREG9j5RLzvF1lds3THOt">
+            <div class="row">
+              <div class="input-field col s12">
+                  <input type="text" class="form-control" required="true" name="username" pattern="[A-Za-z0-9_-]{5,32}" title="Alphanumeric dengan '_' atau '-'. Musti diantara 5-32 karakter." value="">
+                  <label for="username">Username</label>
+              </div>
+              <div class="input-field col s12">
+                  <input type="email" class="form-control" required="true" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]{1,64}$" title="Tolong ketik dengan email address format yang benar." value="">
+                  <label for="password">Email Address</label>
+              </div>
+              <div class="input-field col s12">
+                   <input type="password" class="form-control" required="true" name="password" id="passwordid" pattern=".{6,32}" title="Musti diantara 6-32 karakter.">
+                  <label for="password">Password</label>
+              </div>
+              <div class="input-field col s12">
+                  <input type="password" class="form-control" required="true" name="confirmpassword" id="confirmpasswordid">
+                  <label for="password">Confirm Password</label>
+              </div>
+              <p>
+                <center>
+                  <label style="font-weight: 300; font-size: 100%;" for="tos">Dengan mendaftar, Anda setuju dengan <br><a href="/tos" target="popup" onclick="window.open('../html-link.htm','name','width=600,height=400')">Syarat dan Ketentuan</a> situs ini.
+                  </label>
+              </center>
+            </p>
+            <center>
+                <button class="btn btn-lg btn-primary btn-block pink accent-3" type="submit" onclick="validateForm();">Daftar</button>
+              </center>
+            </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+          </div>
+        </div>
+              </div>
+    </header>
+    <main class="grey lighten-5">
+      <!-- Content -->
+
+    <ul class="center">
+      <li> <h2> <b> This is a frog! </b> </h2> <img src= "https://upload.wikimedia.org/wikipedia/commons/5/55/Atelopus_zeteki1.jpg" width="800" height="600"> 
+      <li> <a class="waves-effect waves-light btn-large red darken-2">Comment</a>
+      <a class="waves-effect waves-light btn-large red darken-2"><i class="material-icons left">thumb_up</i>upvote</a>
+      <a class="waves-effect waves-light btn-large red darken-2"><i class="material-icons right">thumb_down</i>downvote</a> </li> </li>
+      <li> <h2> <b> This is a duck! </b> </h2> <img src="data:image/jpeg;base64,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" width="800" height="600"> 
+      <li> <a class="waves-effect waves-light btn-large red darken-2">Comment</a>
+      <a class="waves-effect waves-light btn-large red darken-2 btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip"> <i class="material-icons left">thumb_up</i>upvote</a>
+      <a class="waves-effect waves-light btn-large red darken-2"><i class="material-icons right">thumb_down</i>downvote</a> </li> </li>
+      <li> <h2> <b> This is a dog! </b> </h2> <img src="https://s-media-cache-ak0.pinimg.com/736x/cb/d4/1f/cbd41fb83c06a915a79ed0ab9ca63789.jpg" width="800" height="600">
+      <li> <a class="waves-effect waves-light btn-large red darken-2">Comment</a>
+      <a class="waves-effect waves-light btn-large red darken-2"><i class="material-icons left">thumb_up</i>upvote</a>
+      <a class="waves-effect waves-light btn-large red darken-2"><i class="material-icons right">thumb_down</i>downvote</a> </li> </li>
+    </ul>
+          </main>
+    <footer class="page-footer black">
+      <div class="container black hide-on-med-and-down">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Mike Belajar Coding</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Tentang Mike Kim</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Jadi anak buah gue</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contact mikeyy</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Belajaran</a></li>
+            </ul>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">M I K E</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">steamcommunity.com/id/kimbalance</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Michael</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Mikksss24</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Rokonya gg filter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container black hide-on-large-only center">
+        <div class="grey-text text-lighten-3">
+          <a class="grey-text text-lighten-3" href="#!">Tentang Mike Kim</a>&nbsp;&middot;&nbsp;
+          <a class="grey-text text-lighten-3" href="#!">Jadi anak buah gue</a>&nbsp;&middot;&nbsp;
+          <a class="grey-text text-lighten-3" href="#!">Contact mikeyyy</a>&nbsp;&middot;&nbsp;
+          <a class="grey-text text-lighten-3" href="#!">Belajaran coding</a>
+          <p></p>
+          <a class="grey-text text-lighten-3" href="#!">steamcommunity.com/id/kimbalance</a>&nbsp;&middot;&nbsp;
+          <a class="grey-text text-lighten-3" href="#!">Michael</a>&nbsp;&middot;&nbsp;
+          <a class="grey-text text-lighten-3" href="#!">Contact mikeyyy</a>&nbsp;&middot;&nbsp;
+          <a class="grey-text text-lighten-3" href="#!">Belajaran coding</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="footer-copyright black">
+        <div class="container">
+          © 2017 Mike Kim Super Awesome
+          <a title="Follow topiqudotcom on Twitter" href="http://www.twitter.com/topiqudotcom" class="right" style="padding-top: 10px;">&nbsp;<img alt="Follow topiqudotcom on Twitter" height="30px" width="30px" src="http://topiqu.com/svg_icons/twitter.svg" border=0>&nbsp;</a>
+          <a title="Follow topiqudotcom on Twitter" href="http://www.twitter.com/topiqudotcom" class="right" style="padding-top: 10px;">&nbsp;<img alt="Follow topiqudotcom on Twitter" height="30px" width="30px" src="http://topiqu.com/svg_icons/instagram.svg" border=0>&nbsp;</a>
+          <a title="Follow topiqudotcom on Twitter" href="http://www.twitter.com/topiqudotcom" class="right" style="padding-top: 10px;">&nbsp;<img alt="Follow topiqudotcom on Twitter" height="30px" width="30px" src="http://topiqu.com/svg_icons/facebook.svg" border=0>&nbsp;</a>
+          <a title="Follow topiqudotcom on Twitter" href="http://www.twitter.com/topiqudotcom" class="right" style="padding-top: 10px;">&nbsp;<img alt="Follow topiqudotcom on Twitter" height="30px" width="30px" src="http://topiqu.com/svg_icons/youtube.svg" border=0>&nbsp;</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Content -->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function()
+      {
+        $('.modal-trigger').leanModal();
+      });
+    </script>
+  </body>
+</html>
